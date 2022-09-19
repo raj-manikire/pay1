@@ -1,7 +1,7 @@
 //import logo from './logo.svg';
 import './App.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
-import {  Routes, Route, Link, } from 'react-router-dom'
+import { HashRouter, Routes, Route, Link, } from 'react-router-dom'
 import Login from './Component/SignIn'
 import SignUp from './Component/Signup';
 import PaymentOpt from './Component/PaymentsOpt';
@@ -18,6 +18,7 @@ function App() {
   return (
     
    //<Router>
+    <HashRouter basename="/">
       <div className="App">
       
         <nav className="navbar navbar-expand-lg navbar-light fixed-top">
@@ -56,6 +57,7 @@ function App() {
         </div>
         
       </div>
+      </HashRouter>
     
     //</Router>
     
